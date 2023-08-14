@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+a{color: black;}
+a:link{color: black;}
+a:visited{color: black;}
+a:active{color: black;}
+
+body{
+    position: relative;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: orangered;
+}
+#menu{
+    position: absolute;
+    top: 250px;
+    z-index: 5;
+
+}
+.menu-wrap{
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    display: block;
+}
+menu{
+    position: relative;
+    width: 97.5%;
+    height: 60px;
+    top: 10px;
+}

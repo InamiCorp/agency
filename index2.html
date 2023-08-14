@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../sfx/assets/img/Favicon inami 150x150.png" type="image/x-icon">
+    <link rel="stylesheet" href="../sfx/assets/css/estilo.css">
+    <title>SFX ESTUDIO</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="menu" id="menu" checked>
+        <label for="menu"><img src="../sfx/assets/img/logo 150 x 65.png" alt=""></label>
+        <div class="menu-wrap">
+            <menu>
+                <ul><li><a href="#" id="logo"><img src="../sfx/assets/img/logo 150 x 65.png" alt=""></a></li>
+                    <li><a href="#">item</a></li>
+                    <li><a href="#">item</a></li>
+                    <li><a href="#">item</a></li>
+                    <li><a href="#">item</a></li>
+                    <li><a href="#">item</a></li>
+                    <li><a href="#" id="call1">call</a></li>
+                </ul>
+            </menu>
+        </div>
+    </header>
+</body>
+<script>
+   function menu(){
+        menus = document.getElementById("menu");
+        wrap = document.getElementsByClassName("menu-wrap");
+    if(menus.checked == true){
+        console.log("wrap");
+    }else{
+        console.log("unchecked");
+    }
+   }
+</script>
+</html>

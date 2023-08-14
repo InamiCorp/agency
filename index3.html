@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/img/Favicon inami 150x150.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/index3.css">
+        <title>SFX ESTUDIO</title>
+    </head>
+<body>
+    <header>
+        <input type="checkbox" name="menubox" id="menubox" checked onchange="validate()">
+            <label for="menubox"><img id="logo" src="./assets/img/logo 150 x 65.png" alt="logo"></label>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+            </ul>
+                
+                
+        </menu>
+    </header>
+    <footer>
+        <p>SFX ESTUDIO 2023</p>
+    </footer>
+</body>
+<script>
+    var menubox = document.getElementById("menubox");
+    var menu = document.getElementById("menu");
+
+    function validate() {        
+        if (document.getElementById('menubox').checked) {            
+            menu.style.left = "0vw";
+        } else {
+            menu.style.left = "100vw";
+            
+        }
+    }
+</script>
+</html>

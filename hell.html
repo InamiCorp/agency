@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/Favicon inami 150x150.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>SFX ESTUDIO</title>
+</head>
+<style>
+@media screen and (max-width:320px) {
+
+.header-tablet{
+    display: none;
+} 
+.header-desktop{
+    display: none;
+} 
+html, body{
+    position: absolute;
+    width: 100vw;
+    height: 95vh;
+    top: 15px;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: orangered;
+    z-index: 1000;
+}
+#logo{
+    position: relative;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 0px;
+    padding-right: 150px;    
+}
+#menu-icon{
+    width: 40px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.mobile-header-menu{
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    top: 50px;
+    left: -200vw;
+    background-color: purple;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: -40px;
+    display: block;
+    transition: 1.5s;
+    opacity: 0;
+
+    background-color:green;
+}
+section p{
+    width: 80%;
+}
+/*hero*/
+.hero{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: block;/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  tirei o hero pra ver melhor*/
+
+}
+.shade{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+}
+.triangle1{
+    position: relative;
+    width: 1200px;
+    height: 250px;
+    left: -550px;
+    top: -500px;
+    transform: rotate(45deg);
+    border-radius: 15px;
+    background-color: purple;
+    z-index: -1;
+}
+.triangle2{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 0px;
+    top: -700px;
+    transform: rotate(45deg);
+    border-radius: 15px;
+    background-color: purple;
+}
+.hero-title p{
+    position: relative;
+    top: -800px;
+    color: black;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px blue;
+}
+.hero-description p{
+    position: relative;
+    top: -800px;
+    color: black;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px blue;
+}
+.footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: orangered;
+    z-index: 1000;
+    transition: none;
+}
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    transform: translatey(30vh);
+    filter: blur(2.5px);
+}
+.show{
+    opacity: 1;
+    transform: translatey(0vw);
+    filter: blur(0px);
+    z-index: 1;
+}
+.footer-tablet{
+    display: none;
+} 
+.footer-desktop{
+    display: none;
+}
+}
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+
+</style>
+<body>
+<div class="header header-mobile">
+    <img id="logo" src="./assets/img/logo 150 x 65.png" alt="logo">
+    <img id="menu-icon" src="./assets/img/Favicon inami 150x150.png" alt="menu-icon">
+    <div class="mobile-header-menu" id="mobile-header-menu">
+        <ul>
+            <li>
+                <a href="#">home</a>
+            </li>
+            <li>
+                <a href="#">serviços</a>
+            </li>
+            <li>
+                <a href="#">preços</a>
+            </li>
+            <li>
+                <a href="#">sobre</a>
+            </li>
+            <li>
+                <a href="#">contato</a>
+            </li>
+        </ul>
+    </div>
+
+</div>   
+<div class="header header-tablet"></div>
+<div class="header header-desktop"></div>
+
+<section class="hidden hero">
+    <div class="shade"></div>
+    <div class="triangle1"></div>
+    <div class="triangle2"></div>
+    <div class="hero-title"><p>SFX ESTUDIO</p></div>
+    <div class="hero-description"><p>Interfaces Gráficas</p></div>
+</section>
+<section class="hidden">
+    <h2>hey</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repellat assumenda accusamus iure reprehenderit nostrum saepe amet, laborum optio reiciendis corrupti similique magnam voluptatibus sequi doloremque labore animi provident. Perspiciatis.
+    Perspiciatis ducimus eligendi doloribus iure commodi debitis dolorum nobis sed quos totam, cum voluptates? Officiis similique sit in obcaecati libero quia aspernatur corporis itaque dicta! Quos officia aliquam adipisci magni.
+    Eligendi consectetur, voluptatem et eius ratione culpa, quia quaerat nisi dolorum laborum soluta saepe dolore eos aperiam libero autem consequuntur tempore officiis ex, quos illo qui! Quod facere ducimus consectetur.</p>
+</section>
+<section class="hidden">
+    <h2>hey</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repellat assumenda accusamus iure reprehenderit nostrum saepe amet, laborum optio reiciendis corrupti similique magnam voluptatibus sequi doloremque labore animi provident. Perspiciatis.
+    Perspiciatis ducimus eligendi doloribus iure commodi debitis dolorum nobis sed quos totam, cum voluptates? Officiis similique sit in obcaecati libero quia aspernatur corporis itaque dicta! Quos officia aliquam adipisci magni.
+    Eligendi consectetur, voluptatem et eius ratione culpa, quia quaerat nisi dolorum laborum soluta saepe dolore eos aperiam libero autem consequuntur tempore officiis ex, quos illo qui! Quod facere ducimus consectetur.</p>
+</section>
+<section class="hidden">
+    <h2>hey</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repellat assumenda accusamus iure reprehenderit nostrum saepe amet, laborum optio reiciendis corrupti similique magnam voluptatibus sequi doloremque labore animi provident. Perspiciatis.
+    Perspiciatis ducimus eligendi doloribus iure commodi debitis dolorum nobis sed quos totam, cum voluptates? Officiis similique sit in obcaecati libero quia aspernatur corporis itaque dicta! Quos officia aliquam adipisci magni.
+    Eligendi consectetur, voluptatem et eius ratione culpa, quia quaerat nisi dolorum laborum soluta saepe dolore eos aperiam libero autem consequuntur tempore officiis ex, quos illo qui! Quod facere ducimus consectetur.</p>
+</section>
+<section class="hidden">
+    <h2>hey</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repellat assumenda accusamus iure reprehenderit nostrum saepe amet, laborum optio reiciendis corrupti similique magnam voluptatibus sequi doloremque labore animi provident. Perspiciatis.
+    Perspiciatis ducimus eligendi doloribus iure commodi debitis dolorum nobis sed quos totam, cum voluptates? Officiis similique sit in obcaecati libero quia aspernatur corporis itaque dicta! Quos officia aliquam adipisci magni.
+    Eligendi consectetur, voluptatem et eius ratione culpa, quia quaerat nisi dolorum laborum soluta saepe dolore eos aperiam libero autem consequuntur tempore officiis ex, quos illo qui! Quod facere ducimus consectetur.</p>
+</section>
+<section class="hidden">
+    <h2>hey</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repellat assumenda accusamus iure reprehenderit nostrum saepe amet, laborum optio reiciendis corrupti similique magnam voluptatibus sequi doloremque labore animi provident. Perspiciatis.
+    Perspiciatis ducimus eligendi doloribus iure commodi debitis dolorum nobis sed quos totam, cum voluptates? Officiis similique sit in obcaecati libero quia aspernatur corporis itaque dicta! Quos officia aliquam adipisci magni.
+    Eligendi consectetur, voluptatem et eius ratione culpa, quia quaerat nisi dolorum laborum soluta saepe dolore eos aperiam libero autem consequuntur tempore officiis ex, quos illo qui! Quod facere ducimus consectetur.</p>
+</section>
+<section class="hidden">
+    <h2>hey</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repellat assumenda accusamus iure reprehenderit nostrum saepe amet, laborum optio reiciendis corrupti similique magnam voluptatibus sequi doloremque labore animi provident. Perspiciatis.
+    Perspiciatis ducimus eligendi doloribus iure commodi debitis dolorum nobis sed quos totam, cum voluptates? Officiis similique sit in obcaecati libero quia aspernatur corporis itaque dicta! Quos officia aliquam adipisci magni.
+    Eligendi consectetur, voluptatem et eius ratione culpa, quia quaerat nisi dolorum laborum soluta saepe dolore eos aperiam libero autem consequuntur tempore officiis ex, quos illo qui! Quod facere ducimus consectetur.</p>
+</section>
+<section class="hidden">
+    <h2>hey</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repellat assumenda accusamus iure reprehenderit nostrum saepe amet, laborum optio reiciendis corrupti similique magnam voluptatibus sequi doloremque labore animi provident. Perspiciatis.
+    Perspiciatis ducimus eligendi doloribus iure commodi debitis dolorum nobis sed quos totam, cum voluptates? Officiis similique sit in obcaecati libero quia aspernatur corporis itaque dicta! Quos officia aliquam adipisci magni.
+    Eligendi consectetur, voluptatem et eius ratione culpa, quia quaerat nisi dolorum laborum soluta saepe dolore eos aperiam libero autem consequuntur tempore officiis ex, quos illo qui! Quod facere ducimus consectetur.</p>
+</section>
+
+
+<div class="footer footer-mobile">
+    <p>SFX ESTUDIO® <br> copyright 2023</p>
+</div>   
+<div class="footer footer-tablet"></div>
+<div class="footer footer-desktop"></div>
+</body>
+<script defer>
+/*<<<<<<<<<<<<<:    animação do scroll:     >>>>>>>>>>>>>*/
+    const observer = new IntersectionObserver((entries) => {
+       entries.forEach((entry) =>{
+           if (entry.isIntersecting){
+               entry.target.classList.add('show');
+           }else{
+               entry.target.classList.remove('show');
+           }
+       });
+   });
+   
+   const hiddenElements = document.querySelectorAll('.hidden');
+   hiddenElements.forEach((el) => observer.observe(el));
+
+/*<<<<<<<<<<<<<:    chama o menu    :>>>>>>>>>>>>>*/
+
+    let menu_icon = document.getElementById("menu-icon");
+    let mobile_header_menu = document.getElementById("mobile-header-menu");
+    menu_icon.addEventListener("click",function menu(){
+        
+        if(mobile_header_menu.style.left == "-200vw"){
+            console.log('sim');
+            mobile_header_menu.style.left = "0vw";
+            /*mobile_header_menu.style.opacity = 1;*/
+            mobile_header_menu.style.transition = "0.5s";
+        }else{
+            mobile_header_menu.style.left = "-200vw";
+        }
+        
+
+    });
+
+        
+    
+    
+    
+        
+
+    
+    
+</script>
+</html>

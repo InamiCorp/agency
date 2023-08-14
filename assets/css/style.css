@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+a{color: black;}
+a:link{color: black;}
+a:visited{color: black;}
+a:active{color: black;}
